@@ -15,7 +15,7 @@ namespace System.ComponentModel.DataAnnotations;
 /// <summary>
 /// A class that represents a Guid attribute.
 /// </summary>
-public sealed class GuidAttribute : ValueAttribute<Guid>
+public sealed class GuidAttribute : ValueAttribute<guid>
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="GuidAttribute"/> class
@@ -29,10 +29,10 @@ public sealed class GuidAttribute : ValueAttribute<Guid>
     /// using the specified GUID value.
     /// </summary>
     /// <param name="guid">A GUID value.</param>
-    public GuidAttribute(Guid guid) : base(guid) { }
+    public GuidAttribute(guid guid) : base(guid) { }
 
     /// <summary>
     /// Gets the GUID value represented by the current <see cref="GuidAttribute"/>.
     /// </summary>
-    public Guid Guid => Value;
+    public guid Guid => Value;
 }

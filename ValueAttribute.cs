@@ -20,7 +20,7 @@ public abstract class ValueAttribute<T> : Attribute
     /// Initializes a new instance of the ValueAttribute class with the specified value.
     /// </summary>
     /// <param name="value">The value of the attribute.</param>
-    public ValueAttribute(T value) => Value = value;
+    protected ValueAttribute(T value) => Value = value;
 
     /// <summary>
     /// Gets the value of the attribute.
