@@ -15,21 +15,22 @@ namespace System.ComponentModel.DataAnnotations;
 /// <summary>
 /// A class that represents a Guid attribute.
 /// </summary>
-public sealed class GuidAttribute : ValueAttribute<guid>
+[AttributeUsage(
+    AttributeTargets.Class
+        | AttributeTargets.Struct
+        | AttributeTargets.Property
+        | AttributeTargets.Field,
+    Inherited = true,
+    AllowMultiple = false
+)]
+public sealed class GuidAttribute(string guid) : ValueAttribute<guid>(System.Guid.Parse(guid))
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="GuidAttribute"/> class
-    /// using the specified string representation of a GUID.
-    /// </summary>
-    /// <param name="guid">A string representation of a GUID.</param>
-    public GuidAttribute(string guid) : this(Guid.Parse(guid)) { }
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="GuidAttribute"/> class
-    /// using the specified GUID value.
+    /// using the specified <see cref="guid" /> value.
     /// </summary>
     /// <param name="guid">A GUID value.</param>
-    public GuidAttribute(guid guid) : base(guid) { }
+    public GuidAttribute(guid guid) : this(guid.ToString()) { }
 
     /// <summary>
     /// Gets the GUID value represented by the current <see cref="GuidAttribute"/>.

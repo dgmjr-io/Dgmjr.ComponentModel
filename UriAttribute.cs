@@ -16,20 +16,15 @@ namespace System.ComponentModel.DataAnnotations;
 /// <summary>
 /// Attribute that can be applied to properties, fields, and parameters. Allows multiple instances of the attribute to be used on a single target.
 /// </summary>
+/// <param name="uri">The string representation of the Uri value.</param>
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter, AllowMultiple = true)]
-public sealed class UriAttribute : ValueAttribute<Uri>
+public sealed class UriAttribute(string uri) : ValueAttribute<Uri>(new Uri(uri))
 {
     /// <summary>
     /// Initializes a new instance of the UriAttribute class with a specified Uri parameter and passes it to the base constructor.
     /// </summary>
     /// <param name="uri">The Uri value.</param>
-    public UriAttribute(Uri uri) : base(uri) { }
-
-    /// <summary>
-    /// Initializes a new instance of the UriAttribute class with a specified string parameter representing a URI. It creates a new instance of Uri using the string parameter and passes it to the base constructor.
-    /// </summary>
-    /// <param name="uri">The string representation of the Uri value.</param>
-    public UriAttribute(string uri) : this(new Uri(uri)) { }
+    public UriAttribute(Uri uri) : this(uri.ToString()) { }
 
     /// <summary>
     /// Gets the value of the URI stored in the base class's "Value" property.

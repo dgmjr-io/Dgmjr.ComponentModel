@@ -12,14 +12,15 @@
 
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net8.0</TargetFrameworks>
         <!-- <TargetFramework>netstandard2.0</TargetFramework> -->
-        <RootNamespace>Dgmjr.ComponentModel</RootNamespace>
+        <RootNamespace>System.ComponentModel.DataAnnotations</RootNamespace>
         <AssemblyName>Dgmjr.ComponentModel</AssemblyName>
         <PackageId>Dgmjr.ComponentModel</PackageId>
         <SlnGenSolutionFolder>src</SlnGenSolutionFolder>
         <EmitNuspec>true</EmitNuspec>
         <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <NoWarn>$(NoWarn);S3604;CS8981</NoWarn>
         <Description>
             # Dgmjr.ComponentModel
             This package contains additional attributes similar to the ones offered in `System.ComponentModel.`  Types include the following:
