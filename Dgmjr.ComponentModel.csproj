@@ -27,10 +27,11 @@
 
             | Type                                                                                                                                           | Description                                                                      |
             | :----------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
-            | [`GuidAttribute`](https://github.com/dgmjr-io/Types/blob/main/src/Core/ComponentModel/GuidAttribute.cs)                   | An attribute for placing a GUID on a class member                                |
-            | [`UriArttribute`](https://github.com/dgmjr-io/Types/blob/main/src/Core/ComponentModel/UriAttribute.cs)                    | An attribute for placing a URI on a class member                                 |
-            | [`FromStringAttribute`](https://github.com/dgmjr-io/Types/blob/main/src/Core/ComponentModel/FromStringAttribute.cs)       | An attribute for noting a member that can be used to parse a value from a string |
-            | [`FileExtensionAttribute`](https://github.com/dgmjr-io/Types/blob/main/src/Core/ComponentModel/FileExtensionAttribute.cs) | An attribute for noting something's file extension(s)                            |
+            | [`GuidAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/GuidAttribute.cs)                   | An attribute for placing a GUID on a class member                                |
+            | [`UriArttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/UriAttribute.cs)                    | An attribute for placing a URI on a class member                                 |
+            | [`FromStringAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/FromStringAttribute.cs)       | An attribute for noting a member that can be used to parse a value from a string |
+            | [`FileExtensionAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/FileExtensionAttribute.cs) | An attribute for noting something's file extension(s)                            |
+            | [`SynonymsAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/SynonymsAttribute.cs) | An attribute for holding the synonyms of an item                            |
         </Description>
         <ProjectGuid>c5218b5f-7a8e-474d-b7bd-3c8369309861</ProjectGuid>
     </PropertyGroup>

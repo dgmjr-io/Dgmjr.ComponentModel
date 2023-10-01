@@ -1,17 +1,14 @@
-using System;
-
-//
-// UriAttribute.cs
-//
-//   Created: 2022-10-16-10:50:42
-//   Modified: 2022-10-30-07:14:23
-//
-//   Author: David G. Mooore, Jr. <david@dgmjr.io>
-//
-//   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
-//      License: MIT (https://opensource.org/licenses/MIT)
-//
-
+/*
+ * UriAttribute.cs
+ *
+ *   Created: 2022-10-16-10:50:42
+ *   Modified: 2023-10-01-07:33:02
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+ */
 namespace System.ComponentModel.DataAnnotations;
 
 /// <summary>
