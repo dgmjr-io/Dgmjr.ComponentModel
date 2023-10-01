@@ -30,7 +30,8 @@ public sealed class GuidAttribute(string guid) : ValueAttribute<guid>(System.Gui
     /// using the specified <see cref="guid" /> value.
     /// </summary>
     /// <param name="guid">A GUID value.</param>
-    public GuidAttribute(guid guid) : this(guid.ToString()) { }
+    public GuidAttribute(guid guid)
+        : this(guid.ToString()) { }
 
     /// <summary>
     /// Gets the GUID value represented by the current <see cref="GuidAttribute"/>.

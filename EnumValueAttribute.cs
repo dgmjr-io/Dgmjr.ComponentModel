@@ -16,6 +16,4 @@ namespace System.ComponentModel.DataAnnotations;
 /// </summary>
 /// <param name="value">The custom value associated with the enum member.</param>
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = false)]
-public class EnumValueAttribute(string value) : ValueAttribute<string>(value)
-{
-}
+public class EnumValueAttribute(string value) : ValueAttribute<string>(value) { }
