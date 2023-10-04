@@ -23,7 +23,8 @@ jobs:
         git-nuget-endpoint: ${{ vars.GIT_NUGET_ENDPOINT }}
         private-nuget-endpoint: ${{ vars.PROGET_ENDPOINT_URL }}
         private-nuget-api-key: ${{ secrets.PROGET_API_KEY }}
-        project-file-path: 'src/Dgmjr.ComponentModel.csproj'
+        repo: dgmjr-io/Dgmjr.ComponentModel
+        project-file-path: Dgmjr.ComponentModel.csproj
         
   nuget-push:
     needs: build
@@ -37,4 +38,6 @@ jobs:
         git-nuget-endpoint: ${{ vars.GIT_NUGET_ENDPOINT }}
         private-nuget-endpoint: ${{ vars.PROGET_ENDPOINT_URL }}
         private-nuget-api-key: ${{ secrets.PROGET_API_KEY }}
+        repo: dgmjr-io/Dgmjr.ComponentModel
+        project-file-path: Dgmjr.ComponentModel.csproj
       
