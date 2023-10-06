@@ -14,8 +14,10 @@ This package contains additional attributes similar to the ones offered in `Syst
 
 Type                                                                                                                                           | Description                                                                      |
 | :----------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
-| [`GuidAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/GuidAttribute.cs)                   | An attribute for placing a GUID on a class member                                |
-| [`UriArttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/UriAttribute.cs)                    | An attribute for placing a URI on a class member                                 |
+| [`EnumValueAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/FromStringAttribute.cs)       | An attribute for assigning a string value to an enum field |
 | [`FromStringAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/FromStringAttribute.cs)       | An attribute for noting a member that can be used to parse a value from a string |
-| [`FileExtensionAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/FileExtensionAttribute.cs) | An attribute for noting something's file extension(s)                            |
+| [`GuidAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/GuidAttribute.cs)                   | An attribute for placing a GUID on a class member                                |
 | [`SynonymsAttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/SynonymsAttribute.cs) | An attribute for holding the synonyms of an item                            |
+| [`UriArttribute`](https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/UriAttribute.cs)                    | An attribute for placing a URI on a class member                                 |
+
+[def]: https://github.com/dgmjr-io/Dgmjr.ComponentModel/blob/main/EnumValueAttribute.cs
