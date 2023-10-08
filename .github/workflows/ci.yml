@@ -45,4 +45,7 @@ jobs:
         private-nuget-api-key: ${{ secrets.PROGET_API_KEY }}
         repo: dgmjr-io/Dgmjr.ComponentModel
         project-file-path: Dgmjr.ComponentModel.csproj
+        push-nuget: false
+        push-dgmjr-io: true
+        push-github: false
       
