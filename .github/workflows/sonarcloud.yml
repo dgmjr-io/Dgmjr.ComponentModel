@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build and Analyze
-      uses: dgmjr-actions/build-using-dgmjrsdk@main
+      uses: dgmjr-actions/sonar-scanner@main
       with:
         git-token: ${{ secrets.GITHUB_TOKEN }}
         configuration: Release
