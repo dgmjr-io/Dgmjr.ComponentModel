@@ -22,6 +22,3 @@ jobs:
         project-file-path: Dgmjr.ComponentModel.csproj
         sonar-token: ${{ secrets.SONAR_TOKEN }}
         sonar-project-key: ${{ vars.SONAR_PROJECT_KEY }}
-    - name: End Sonar Scanner
-      shell: pwsh
-      run: .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
