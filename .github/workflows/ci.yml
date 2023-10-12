@@ -17,7 +17,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - name: Build using DgmjrSdk
@@ -33,7 +33,7 @@ jobs:
         
   nuget-push:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Run nuget-push
       uses: dgmjr-actions/nuget-push@main
