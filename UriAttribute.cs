@@ -19,7 +19,11 @@ namespace System.ComponentModel.DataAnnotations;
     AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter,
     AllowMultiple = true
 )]
-public sealed class UriAttribute(string uri) : ValueAttribute<Uri>(new Uri(uri))
+public sealed class UriAttribute(
+#if NET7_0_OR_GREATER
+    [StringSyntax(StringSyntaxAttribute.Regex)]
+#endif
+    string uri) : ValueAttribute<Uri>(new Uri(uri))
 {
     /// <summary>
     /// Initializes a new instance of the UriAttribute class with a specified Uri parameter and passes it to the base constructor.

@@ -21,6 +21,7 @@
         <EmitNuspec>true</EmitNuspec>
         <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
         <NoWarn>$(NoWarn);S3604;CS8981</NoWarn>
+        <ProjectGuid>b87271be-04af-4310-b53e-3125b8f0e986</ProjectGuid>
         <Description>
             # Dgmjr.ComponentModel
             This package contains additional attributes similar to the ones offered in `System.ComponentModel.`  Types include the following:

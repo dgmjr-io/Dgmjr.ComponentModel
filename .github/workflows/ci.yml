@@ -17,7 +17,11 @@ permissions:
 jobs:
   build:
 
+<<<<<<< HEAD
     runs-on: self-hosted
+=======
+    runs-on: ubuntu-latest
+>>>>>>> 2ecdca3 ('Initial' commit)
 
     steps:
     - name: Build using DgmjrSdk
@@ -33,7 +37,11 @@ jobs:
         
   nuget-push:
     needs: build
+<<<<<<< HEAD
     runs-on: self-hosted
+=======
+    runs-on: ubuntu-latest
+>>>>>>> 2ecdca3 ('Initial' commit)
     steps:
     - name: Run nuget-push
       uses: dgmjr-actions/nuget-push@main
