@@ -8,7 +8,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
 permissions:
   packages: write
   actions: read
@@ -17,11 +17,7 @@ permissions:
 jobs:
   build:
 
-<<<<<<< HEAD
     runs-on: self-hosted
-=======
-    runs-on: ubuntu-latest
->>>>>>> 2ecdca3 ('Initial' commit)
 
     steps:
     - name: Build using DgmjrSdk
@@ -34,14 +30,10 @@ jobs:
         private-nuget-api-key: ${{ secrets.PROGET_API_KEY }}
         repo: dgmjr-io/Dgmjr.ComponentModel
         project-file-path: Dgmjr.ComponentModel.csproj
-        
+
   nuget-push:
     needs: build
-<<<<<<< HEAD
     runs-on: self-hosted
-=======
-    runs-on: ubuntu-latest
->>>>>>> 2ecdca3 ('Initial' commit)
     steps:
     - name: Run nuget-push
       uses: dgmjr-actions/nuget-push@main
@@ -56,4 +48,4 @@ jobs:
         push-nuget: false
         push-dgmjr-io: true
         push-github: false
-      
+
