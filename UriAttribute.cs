@@ -32,8 +32,8 @@ public sealed class UriAttribute(
     public UriAttribute(Uri uri)
         : this(uri.ToString()) { }
 
-    /// <summary>
-    /// Gets the value of the URI stored in the base class's "Value" property.
-    /// </summary>
-    public Uri Uri => Value;
+/// <summary>
+/// Gets the value of the URI stored in the base class's "Value" property.
+/// </summary>
+public Uri Uri => Value;
 }

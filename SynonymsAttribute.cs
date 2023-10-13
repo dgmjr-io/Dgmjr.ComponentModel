@@ -31,8 +31,8 @@ public sealed class SynonymsAttribute(params string[] synonyms) : ValueAttribute
     public SynonymsAttribute(string synonyms)
         : this(synonyms.Split(',')) { }
 
-    /// <summary>
-    /// Gets the array of synonyms stored in the base class's "Value" property.
-    /// </summary>
-    public string[] Synonyms => Value;
+/// <summary>
+/// Gets the array of synonyms stored in the base class's "Value" property.
+/// </summary>
+public string[] Synonyms => Value;
 }
