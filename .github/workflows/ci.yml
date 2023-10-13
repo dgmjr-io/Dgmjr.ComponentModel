@@ -6,7 +6,7 @@ name: CI Build
 concurrency:
   group: CI-build
   cancel-in-progress: true
-  
+
 on:
   push:
     branches: [ "main" ]
