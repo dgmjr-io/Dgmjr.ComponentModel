@@ -1,5 +1,9 @@
 name: SonarCloud
 
+concurrency:
+  group: SonarCloud-Analysis
+  cancel-in-progress: true
+
 on:
   push:
     branches:
