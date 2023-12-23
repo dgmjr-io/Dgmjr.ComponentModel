@@ -51,5 +51,4 @@ jobs:
         project-file-path: Dgmjr.ComponentModel.csproj
         push-nuget: false
         push-dgmjr-io: true
-        push-github: false
-
+        push-github: true
